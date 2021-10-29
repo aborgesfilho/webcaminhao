@@ -1,0 +1,65 @@
+﻿@model WebCaminhao.Models.Caminhao
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Caminhao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <!--<input asp-for="Modelo" class="form-control" />-->
+
+                @Html.DropDownList("Modelo", new List<SelectListItem>
+                   {
+                       new SelectListItem { Text = "FH", Value = "FH"},
+                       new SelectListItem { Text = "FM", Value = "FM"}
+                   }, "Selecione o modelo"
+               )
+
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnoModelo" class="control-label"></label>
+                @Html.DropDownList("AnoModelo", new List<SelectListItem>
+                   {
+                       new SelectListItem { Text = "2021", Value = "2021"},
+                       new SelectListItem { Text = "2022", Value = "2022"}
+                   }, "Selecione o ano modelo"
+               )
+                <span asp-validation-for="AnoModelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnoFabricacao" class="control-label"></label>
+                @Html.DropDownList("AnoFabricacao", new List<SelectListItem>
+                   {
+                       new SelectListItem { Text = "2021", Value = "2021"}
+                   }, "Selecione o ano de fabricação"
+               )
+                <span asp-validation-for="AnoFabricacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

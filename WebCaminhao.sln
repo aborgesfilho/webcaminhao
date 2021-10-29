@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCaminhao", "WebCaminhao\WebCaminhao.csproj", "{DED85394-1976-4374-ADAD-B001E7E429F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCaminhaoTest", "WebCaminhaoTest\WebCaminhaoTest.csproj", "{3A8596FB-E70F-44AF-83F5-45B5257C905C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DED85394-1976-4374-ADAD-B001E7E429F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED85394-1976-4374-ADAD-B001E7E429F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED85394-1976-4374-ADAD-B001E7E429F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED85394-1976-4374-ADAD-B001E7E429F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8596FB-E70F-44AF-83F5-45B5257C905C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8596FB-E70F-44AF-83F5-45B5257C905C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8596FB-E70F-44AF-83F5-45B5257C905C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8596FB-E70F-44AF-83F5-45B5257C905C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA8B25BA-0871-440D-B8DE-B10D2A3D77A8}
+	EndGlobalSection
+EndGlobal
